@@ -154,7 +154,7 @@ $comment;
                                 </div>
                             </div>
                             <div class="select-class">
-                            <h4 class="h4Select">Selecione o componente curricular: </h4>
+                            <h4 class="h4Select">Selecione o Componente curricular: </h4>
                                 <div class="custom-select">
                                     <select class=" selectClass select01" name="selectComponente" id="selectComponenteId" title="selectComponente">
                                         <option value="<?php echo $report->inptValControl($componenteData, $componente, 1, $error, $success); ?>" selected hidden id="place-select"><?php echo $report->inptValControl($componenteData, $componente, 2, $error, $success); ?></option>
