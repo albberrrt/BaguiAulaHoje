@@ -22,7 +22,8 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
+CREATE DATABASE dbrelatorio;
+USE dbrelatorio;
 --
 -- Estrutura da tabela `tbcomponente`
 --

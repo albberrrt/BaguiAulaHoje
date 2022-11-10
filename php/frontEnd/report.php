@@ -32,6 +32,7 @@ $comment;
             // echo "Error: " . $errorCode;
         } else {
             if($report->saveReport($name, $curso, $serie, $turno, $componente, $comment)){
+                $formArray = array($name, $curso, $serie, $turno, $componente, $comment);
                 $success = true;
             } else {
                 $error = true;
@@ -169,6 +170,11 @@ $comment;
                             <div class="button-div">
                                 <button type="submit" name="btn-send">Enviar</button>
                             </div>
+                            <?php if($success === true){ ?>
+                            <div class="linkJson">
+                                <a href="../frontEnd/reportJSON.php?success=true&fname=<?php echo $name?>&fturno=<?php echo $turno ?>&fserie=<?php echo $serie ?>&fcurso=<?php echo $curso ?>&fcomponente=<?php echo $componente ?>&fcomment=<?php echo $comment ?>">Clique aqui para ver suas respostas em JSON</a>
+                            </div>
+                            <?php } ?>
                             
                         </form>
                     </div>

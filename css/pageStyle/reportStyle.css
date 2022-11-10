@@ -294,3 +294,15 @@ form {
   flex-direction: column;
   align-items: center;
 }
+
+.linkJson {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1%;
+}
+
+.linkJson a {
+  font-family: 'Roboto', sans-serif;
+  color: #546d97;
+}
